@@ -1,0 +1,46 @@
+﻿@model object
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayUI";
+}
+@section Css{ 
+    <link rel="stylesheet" href="/lib/layuiadmin/style/admin.css" media="all">
+}
+
+    <form action="/admin/ArticleCategoryEdit" method="post">
+        <div class="layui-form" lay-filter="layuiadmin-form-tags" id="layuiadmin-app-form-tags" style="padding-top: 30px; text-align: center;">
+            <div class="layui-form-item">
+                <label class="layui-form-label">分类名</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="name" lay-verify="required" placeholder="请输入..." autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">描述</label>
+                <div class="layui-input-inline" style="width:80%">
+                    <textarea name="content" id="content" lay-verify="required" style="width: 85%; height: 150px;" autocomplete="off" class="layui-textarea content"></textarea>
+                </div>
+            </div>
+
+            <input type="hidden" name="id" value="" />
+        </div>
+        
+    </form>
+@section Scripts{ 
+    <script>
+        layui.config({
+            base: '/lib/layuiadmin/' //静态资源所在路径
+        }).extend({
+            index: 'lib/index' //主入口模块
+        }).use(['index', 'form'], function(){
+            var $ = layui.$ 
+                , form = layui.form;
+
+            
+        })
+    </script>
+    
+
+}

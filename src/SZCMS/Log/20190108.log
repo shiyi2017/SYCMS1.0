@@ -1,0 +1,64 @@
+2019-01-08 21:15:43,605  [8]  INFO   --------------查询了Article表:总数-0;页码-1;页长-10
+2019-01-08 21:15:46,124  [12]  INFO   --------------查询了Categorys表:Tc = Article; obj = System.Collections.Generic.List`1[SyZero.Domain.Model.Categorys]
+2019-01-08 22:00:47,525  [9]  INFO   --------------查询了Categorys表:Tc = Article; obj = System.Collections.Generic.List`1[SyZero.Domain.Model.Categorys]
+2019-01-08 22:00:51,283  [8]  INFO   --------删除了一条Categorys信息:Tc = Article; Id = 1081935989389266944
+2019-01-08 22:00:54,668  [12]  INFO   --------------查询了Categorys表:Tc = Article; obj = System.Collections.Generic.List`1[SyZero.Domain.Model.Categorys]
+2019-01-08 22:00:58,922  [10]  INFO   ----------------{"TypeCode":null,"Name":"的v","Describe":"的方式","Status":1,"IsDisplay":0,"AddTime":"0001-01-01T00:00:00","UpDateTime":"2019-01-08T22:00:58","Parentid":0,"Id":0}
+2019-01-08 22:00:59,323  [10]  INFO   --------添加了一条Categorys信息:Tc = Article; obj = {"Id":null,"Name":"的v","Status":"1","UpdateTime":"2019/1/8 22:00:58","Describe":"的方式"}
+2019-01-08 22:00:59,411  [10]  INFO   --------------查询了Categorys表:Tc = Article; obj = System.Collections.Generic.List`1[SyZero.Domain.Model.Categorys]
+2019-01-08 22:01:03,793  [11]  INFO   ----------------{"TypeCode":null,"Name":"的v蛇大","Describe":"的方式","Status":1,"IsDisplay":0,"AddTime":"0001-01-01T00:00:00","UpDateTime":"2019-01-08T22:01:03","Parentid":0,"Id":1082638296217161729}
+2019-01-08 22:01:04,247  [11]  INFO   --------更新了一条Categorys信息:Tc = Article; obj = {"Id":"1082638296217161729","Name":"的v蛇大","Status":"1","UpdateTime":"2019/1/8 22:01:03","Describe":"的方式"}
+2019-01-08 22:01:04,334  [8]  INFO   --------------查询了Categorys表:Tc = Article; obj = System.Collections.Generic.List`1[SyZero.Domain.Model.Categorys]
+2019-01-08 22:07:29,953  [30]  INFO   --------------查询了Article表:总数-0;页码-1;页长-10
+2019-01-08 22:10:03,915  [39]  INFO   --------------查询了Article表:总数-0;页码-1;页长-10
+2019-01-08 22:11:05,319  [27]  INFO   --------------查询了Article表:总数-0;页码-1;页长-10
+2019-01-08 22:11:14,417  [27]  INFO   --------添加了一条Article信息:{"Title":"啊大苏打","Ctid":0,"Author":"蛇大","Img":null,"AddTime":"2019-01-08T22:11:14.1053069+08:00","Content":null,"Hot":0,"IsDisplay":0,"Status":1,"Id":1082640876481679360}
+2019-01-08 22:11:14,579  [29]  INFO   --------------查询了Article表:总数-1;页码-1;页长-10
+2019-01-08 22:11:28,104  [39]  INFO   --------添加了一条Article信息:{"Title":"阿三","Ctid":0,"Author":"按市场","Img":null,"AddTime":"2019-01-08T22:11:27.859824+08:00","Content":null,"Hot":0,"IsDisplay":0,"Status":1,"Id":1082640934170136578}
+2019-01-08 22:11:28,263  [28]  INFO   --------------查询了Article表:总数-2;页码-1;页长-10
+2019-01-08 22:12:55,956  [19]  INFO   --------------查询了Article表:总数-2;页码-1;页长-10
+2019-01-08 22:15:20,299  [13]  INFO   --------------查询了Article表:总数-2;页码-1;页长-10
+2019-01-08 22:35:38,163  [87]  INFO   --------------查询了Article表:总数-2;页码-1;页长-10
+2019-01-08 22:38:29,531  [101]  INFO   --------------查询了Article表:总数-2;页码-1;页长-10
+2019-01-08 22:38:34,880  [92]  INFO   --------------查询了Article表:总数-2;页码-1;页长-10
+2019-01-08 22:39:13,693  [95]  INFO   --------------查询了Article表:总数-2;页码-1;页长-10
+2019-01-08 22:40:02,627  [82]  INFO   --------------查询了Article表:总数-2;页码-1;页长-10
+2019-01-08 22:40:38,458  [97]  INFO   --------------查询了Article表:总数-2;页码-1;页长-10
+2019-01-08 22:41:29,929  [75]  INFO   --------------查询了Categorys表:Tc = Article; obj = System.Collections.Generic.List`1[SyZero.Domain.Model.Categorys]
+2019-01-08 22:41:30,740  [81]  INFO   --------------查询了Article表:总数-2;页码-1;页长-10
+2019-01-08 22:42:10,716  [81]  INFO   --------------查询了Article表:总数-2;页码-1;页长-10
+2019-01-08 22:43:47,064  [8]  INFO   --------------查询了Article表:总数-2;页码-1;页长-10
+2019-01-08 22:47:05,613  [15]  INFO   --------------查询了Article表:总数-2;页码-1;页长-10
+2019-01-08 22:47:55,077  [19]  INFO   --------------查询了Article表:总数-2;页码-1;页长-10
+2019-01-08 22:51:01,282  [29]  INFO   --------------查询了Article表:总数-2;页码-1;页长-10
+2019-01-08 22:52:49,720  [11]  INFO   --------添加了一条Article信息:{"Title":"现在才","Ctid":0,"Author":"从中选出","Img":null,"AddTime":"2019-01-08T22:52:48.4679075+08:00","Content":null,"Hot":0,"IsDisplay":0,"Status":0,"Id":1082651338594193410}
+2019-01-08 22:52:50,317  [10]  INFO   --------------查询了Article表:总数-3;页码-1;页长-10
+2019-01-08 22:54:58,473  [11]  INFO   --------------查询了Article表:总数-3;页码-1;页长-10
+2019-01-08 22:55:08,499  [9]  INFO   --------添加了一条Article信息:{"Title":"士大夫但是","Ctid":0,"Author":"的身份","Img":null,"AddTime":"2019-01-08T22:55:08.1802895+08:00","Content":null,"Hot":0,"IsDisplay":0,"Status":1,"Id":1082651924592988160}
+2019-01-08 22:55:08,667  [8]  INFO   --------------查询了Article表:总数-4;页码-1;页长-10
+2019-01-08 22:58:11,606  [12]  INFO   --------添加了一条Article信息:{"Title":"多方","Ctid":0,"Author":"多方","Img":null,"AddTime":"2019-01-08T22:57:46.7432095+08:00","Content":null,"Hot":0,"IsDisplay":0,"Status":0,"Id":1082652589654413312}
+2019-01-08 22:58:13,597  [11]  INFO   --------------查询了Article表:总数-5;页码-1;页长-10
+2019-01-08 23:02:20,200  [8]  INFO   --------------查询了Article表:总数-5;页码-1;页长-10
+2019-01-08 23:02:27,710  [8]  INFO   --------转换了一条Article信息:{"Title":"反光板","Ctid":0,"Author":"官方","Img":null,"AddTime":"0001-01-01T00:00:00","Content":null,"Hot":0,"IsDisplay":0,"Status":0,"Id":0}
+2019-01-08 23:02:28,000  [8]  INFO   --------添加了一条Article信息:{"Title":"反光板","Ctid":0,"Author":"官方","Img":null,"AddTime":"2019-01-08T23:02:27.7107837+08:00","Content":null,"Hot":0,"IsDisplay":0,"Status":0,"Id":1082653768115425281}
+2019-01-08 23:02:28,174  [8]  INFO   --------------查询了Article表:总数-6;页码-1;页长-10
+2019-01-08 23:03:52,021  [17]  INFO   --------转换了一条Article信息:{"Title":"皇贵妃皇贵妃","Ctid":0,"Author":"从中选出","Img":null,"AddTime":"0001-01-01T00:00:00","Content":null,"Hot":0,"IsDisplay":0,"Status":1,"Id":0}
+2019-01-08 23:03:52,296  [17]  INFO   --------添加了一条Article信息:{"Title":"皇贵妃皇贵妃","Ctid":0,"Author":"从中选出","Img":null,"AddTime":"2019-01-08T23:03:52.0218337+08:00","Content":null,"Hot":0,"IsDisplay":0,"Status":1,"Id":1082654121741389826}
+2019-01-08 23:03:52,468  [17]  INFO   --------------查询了Article表:总数-7;页码-1;页长-10
+2019-01-08 23:04:15,950  [15]  INFO   --------------查询了Article表:总数-7;页码-1;页长-10
+2019-01-08 23:05:04,154  [24]  INFO   --------------查询了Categorys表:Tc = Article; obj = System.Collections.Generic.List`1[SyZero.Domain.Model.Categorys]
+2019-01-08 23:06:54,311  [27]  INFO   --------转换了一条Article信息:{"Title":"和国际化","Ctid":0,"Author":"从中选出","Img":null,"AddTime":"0001-01-01T00:00:00","Content":null,"Hot":0,"IsDisplay":0,"Status":1,"Id":0}
+2019-01-08 23:06:54,543  [27]  INFO   --------添加了一条Article信息:{"Title":"和国际化","Ctid":0,"Author":"从中选出","Img":null,"AddTime":"2019-01-08T23:06:54.3111299+08:00","Content":null,"Hot":0,"IsDisplay":0,"Status":1,"Id":1082654886321065986}
+2019-01-08 23:06:54,731  [27]  INFO   --------------查询了Article表:总数-8;页码-1;页长-10
+2019-01-08 23:10:37,385  [8]  INFO   --------------查询了Article表:总数-8;页码-1;页长-10
+2019-01-08 23:10:46,693  [11]  INFO   --------修改了一条Article信息:{"Title":"城市的城市","Ctid":0,"Author":"从中选出","Img":null,"AddTime":"2019-01-08T23:06:54.3111299","Content":null,"Hot":0,"IsDisplay":0,"Status":1,"Id":1082654886321065986}
+2019-01-08 23:10:46,863  [12]  INFO   --------------查询了Article表:总数-8;页码-1;页长-10
+2019-01-08 23:10:59,710  [12]  INFO   --------修改了一条Article信息:{"Title":"产生的","Ctid":0,"Author":"从中选出","Img":null,"AddTime":"2019-01-08T23:06:54.3111299","Content":null,"Hot":0,"IsDisplay":0,"Status":1,"Id":1082654886321065986}
+2019-01-08 23:10:59,885  [9]  INFO   --------------查询了Article表:总数-8;页码-1;页长-10
+2019-01-08 23:12:27,309  [15]  INFO   --------------查询了Article表:总数-8;页码-1;页长-10
+2019-01-08 23:12:59,710  [24]  INFO   --------------查询了Categorys表:Tc = Article; obj = System.Collections.Generic.List`1[SyZero.Domain.Model.Categorys]
+2019-01-08 23:18:05,933  [42]  INFO   --------------查询了Article表:总数-8;页码-1;页长-10
+2019-01-08 23:18:17,693  [43]  INFO   --------修改了一条Article信息:{"Title":"现在才","Ctid":0,"Author":"从中选出","Img":null,"AddTime":"2019-01-08T22:52:48.4679075","Content":"<b>创造性臭小子</b>","Hot":0,"IsDisplay":0,"Status":0,"Id":1082651338594193410}
+2019-01-08 23:18:17,852  [43]  INFO   --------------查询了Article表:总数-8;页码-1;页长-10
+2019-01-08 23:18:31,672  [43]  INFO   --------修改了一条Article信息:{"Title":"现在才","Ctid":0,"Author":"从中选出","Img":null,"AddTime":"2019-01-08T22:52:48.4679075","Content":"<p><b>创造性臭小子再次谢谢支持</b></p><p>的发射点</p>","Hot":0,"IsDisplay":0,"Status":0,"Id":1082651338594193410}
+2019-01-08 23:18:31,847  [40]  INFO   --------------查询了Article表:总数-8;页码-1;页长-10

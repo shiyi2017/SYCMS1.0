@@ -1,0 +1,114 @@
+﻿@model object
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayUI";
+}
+
+
+<div class="layui-form" lay-filter="layuiadmin-app-form-list" id="layuiadmin-app-form-list" style="padding: 20px 30px 0 0;">
+    <input type="hidden" name="Id" value="" id="Id"/>
+    <div class="layui-form-item">
+        <label class="layui-form-label">文章标题</label>
+        <div class="layui-input-inline">
+            <input type="text" name="Title" lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input Title">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">发布人</label>
+        <div class="layui-input-inline">
+            <input type="text" name="Author" lay-verify="required" placeholder="请输入号码" autocomplete="off" class="layui-input Author">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">文章内容</label>
+        <div class="layui-input-block">
+            <textarea name="Content" id="Content" lay-verify="" style="width: 400px; height: 150px; display: none;" autocomplete="off"  class="layui-textarea Content"></textarea>
+
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">标签</label>
+        <div class="layui-input-inline">
+            <select name="label" lay-verify="required">
+                <option value="">请选择标签</option>
+                <option value="美食">美食</option>
+                <option value="新闻">新闻</option>
+                <option value="八卦">八卦</option>
+                <option value="体育">体育</option>
+                <option value="音乐">音乐</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">发布状态</label>
+        <div class="layui-input-inline">
+            <input type="checkbox" lay-verify="required" lay-filter="status" name="Status" lay-skin="switch" id="Status" lay-text="已发布|待修改" value="1" >
+        </div>
+    </div>
+    <div class="layui-form-item layui-hide">
+        <input type="button" lay-submit lay-filter="layuiadmin-app-form-submit" id="layuiadmin-app-form-submit" value="确认添加">
+        <input type="button" lay-submit lay-filter="layuiadmin-app-form-edit" id="layuiadmin-app-form-edit" value="确认编辑">
+    </div>
+</div>
+
+@section Scripts{
+    
+    <script>
+        layui.config({
+            base: '/lib/layuiadmin/' //静态资源所在路径
+        }).extend({
+            index: 'lib/index' //主入口模块
+            }).use(['index', 'form', 'layedit'], function(){
+            var $ = layui.$
+                , form = layui.form 
+                ,layedit = layui.layedit;
+           
+               
+             var contentedit = layedit.build('Content'); //建立编辑器
+         
+    
+            //监听提交
+            form.on('submit(layuiadmin-app-form-submit)', function(data){
+                var field = data.field; //获取提交的字段
+                alert(field.Title)
+                var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引  
+                if ($("input[name='Id']").val() != "") {
+                    $.ajax({
+                        type: "post",
+                        url: "/api/admin/ajax/UpdataArticle",
+                        data: { Id: field.Id, Title: field.Title, Author: field.Author, Status: field.Status, Content: layedit.getContent(contentedit) },
+                        dataType: "json",
+                        success: function (data) {
+                            if (data.msg == "ok") {
+                                parent.layui.table.reload('LAY-app-content-list'); //重载表格
+                                parent.layer.close(index); //再执行关闭 
+                            }
+                        }
+                    });
+                } else {
+                    $.ajax({
+                        type: "post",
+                        url: "/api/admin/ajax/AddArticle",
+                        data: { Title: field.Title, Author: field.Author, Status: field.Status, Content: layedit.getContent(contentedit) },
+                        dataType: "json",
+                        success: function (data) {
+                            if (data.msg == "ok") {
+                                parent.layui.table.reload('LAY-app-content-list'); //重载表格
+                                parent.layer.close(index); //再执行关闭 
+                            }
+                        }
+                    });
+                }
+                //提交 Ajax 成功后，关闭当前弹层并重载表格
+                //$.ajax({});
+                return false;
+            });
+
+           
+        })
+    </script>
+    
+    
+
+}

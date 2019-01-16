@@ -1,0 +1,155 @@
+﻿@model object
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayUI";
+}
+@section Css{ 
+    <link rel="stylesheet" href="/lib/layuiadmin/style/admin.css" media="all">
+}
+<div class="layui-fluid">
+    <div class="layui-card">
+        <div class="layui-card-header layuiadmin-card-header-auto">
+            <button class="layui-btn layuiadmin-btn-tags" data-type="add">添加</button>
+        </div>
+        <div class="layui-card-body">    
+            <table id="table-article-category" lay-filter="table-article-category"></table>  
+            <script type="text/html" id="table-article-categorybar">
+                <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit"><i class="layui-icon layui-icon-edit"></i>编辑</a>
+                <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon layui-icon-delete"></i>删除</a>
+            </script>
+        </div>
+    </div>
+</div>
+
+@section Scripts{ 
+    
+    <script>
+        layui.config({
+            base: '/lib/layuiadmin/' //静态资源所在路径
+        }).extend({
+            index: 'lib/index' //主入口模块
+        }).use(['index', 'contlist', 'table'], function(){
+
+            var table = layui.table;
+           
+            table.render({
+                elem: '#table-article-category'
+                , url: '/api/admin/ajax/getarticlecategory'
+                , title: '用户数据表'
+                , cols: [[
+                    {type:'numbers'}
+                    , { field: 'Id', title: 'ID', width: 200 }
+                    , { field: 'Name', title: '分类名' }
+                    , { field: 'UpdateTime', title: '修改时间', width: 150 }
+                    , { fixed: 'right', title: '操作', toolbar: '#table-article-categorybar', width: 150 }
+                ]]
+              
+            });
+
+            var $ = layui.$, active = {
+                                 add: function(){
+                                     addCategory();
+                                 }
+                             }
+
+            //监听行工具事件
+            table.on('tool(table-article-category)', function (obj) {
+                var data = obj.data;
+                if (obj.event === 'del') {
+                    layer.confirm('真的删除行么', function (index) {
+                        var id = data.Id;
+                        $.ajax({
+                            type: "post",
+                            url: "/api/admin/ajax/DelArticleCategory",
+                            data: { Id: id},
+                            dataType: "json",
+                            success: function (data) {
+                                if (data.msg == "ok") {
+                                    obj.del();
+                                    layer.close(index);
+                                }
+                            }
+                        });
+                       
+                    });
+                } else if (obj.event === 'edit') {
+                    addCategory(data);
+                }
+            });
+
+            //添加分类  编辑分类
+            function addCategory(edit) {
+                var index = layui.layer.open({
+                    type: 2
+                    , title: '添加分类'
+                    , content: '/admin/ArticleCategoryEdit'
+                    , area: ['100%', '100%']
+                    , btn: ['确定', '取消']
+                    , yes: function (index, layero) {
+                        var othis = layero.find('iframe').contents().find("#layuiadmin-app-form-tags"),
+                            name = othis.find('input[name="name"]').val(),
+                            content = othis.find('#content').val(),
+                            id = othis.find('input[name="id"]').val();
+                        if (edit) {
+                            $.ajax({
+                                type: "post",
+                                url: "/api/admin/ajax/UpdataArticleCategory",
+                                data: {Id:id, Name: name, Status: "1", Describe: content },
+                                dataType: "json",
+                                success: function (data) {
+                                    if (data.msg == "ok") {
+                                        table.reload('table-article-category');
+                                        layer.close(index);
+                                    }
+                                }
+                            });
+                        } else {
+                            $.ajax({
+                                type: "post",
+                                url: "/api/admin/ajax/AddArticleCategory",
+                                data: { Name: name, Status: "1", Describe: content },
+                                dataType: "json",
+                                success: function (data) {
+                                    if (data.msg == "ok") {
+                                        table.reload('table-article-category');
+                                        layer.close(index);
+                                    }
+                                }
+                            });
+                        }
+                    },
+                    success: function (layero, index) {
+                        var body = layui.layer.getChildFrame('body', index);
+                        if (edit) {
+                            body.find('input[name="id"]').val(edit.Id);
+                            body.find('input[name="name"]').val(edit.Name);
+                            body.find('#content').val(edit.Describe);
+                        }
+                        setTimeout(function () {
+                            layui.layer.tips('点击此处返回文章分类列表', '.layui-layer-setwin .layui-layer-close', {
+                                tips: 3
+                            });
+                        }, 500);
+                    }
+                });
+
+                layui.layer.full(index);
+                //改变窗口大小时，重置弹窗的宽高，防止超出可视区域（如F12调出debug的操作）
+                $(window).on("resize", function () {
+                    layui.layer.full(index);
+                })
+            }
+
+            $('.layui-btn.layuiadmin-btn-tags').on('click', function(){
+                var type = $(this).data('type');
+                active[type] ? active[type].call(this) : '';
+            });
+        });
+    </script>
+    
+    <script>
+       
+    </script>
+
+}

@@ -1,0 +1,2 @@
+2019-01-16 22:11:33,392  [8]  INFO   --------------查询了Categorys表:Tc = Article; obj = System.Collections.Generic.List`1[SyZero.Domain.Model.Categorys]
+2019-01-16 22:11:35,415  [10]  INFO   --------------查询了Article表:总数-9;页码-1;页长-10
