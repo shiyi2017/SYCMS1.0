@@ -1,0 +1,6 @@
+F:\项目\SYCMS1.0\src\SyZero.Infrastructure.Mongo\bin\Release\netcoreapp2.1\SyZero.Infrastructure.Mongo.deps.json
+F:\项目\SYCMS1.0\src\SyZero.Infrastructure.Mongo\bin\Release\netcoreapp2.1\SyZero.Infrastructure.Mongo.dll
+F:\项目\SYCMS1.0\src\SyZero.Infrastructure.Mongo\obj\Release\netcoreapp2.1\SyZero.Infrastructure.Mongo.csproj.CoreCompileInputs.cache
+F:\项目\SYCMS1.0\src\SyZero.Infrastructure.Mongo\obj\Release\netcoreapp2.1\SyZero.Infrastructure.Mongo.AssemblyInfoInputs.cache
+F:\项目\SYCMS1.0\src\SyZero.Infrastructure.Mongo\obj\Release\netcoreapp2.1\SyZero.Infrastructure.Mongo.AssemblyInfo.cs
+F:\项目\SYCMS1.0\src\SyZero.Infrastructure.Mongo\obj\Release\netcoreapp2.1\SyZero.Infrastructure.Mongo.csprojAssemblyReference.cache

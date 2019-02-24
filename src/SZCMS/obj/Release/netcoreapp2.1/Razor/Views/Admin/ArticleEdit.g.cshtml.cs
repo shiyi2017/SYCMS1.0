@@ -97,7 +97,7 @@ using SZCMS.Models;
                 ");
             EndContext();
             BeginContext(1391, 31, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b191e6b0c87b4f93afc01f89800af1d7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "39f5717fb21c4975b01ae214fa209199", async() => {
                 BeginContext(1408, 5, true);
                 WriteLiteral("请选择标签");
                 EndContext();
@@ -119,7 +119,7 @@ using SZCMS.Models;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(1440, 30, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b5d95a312ad940199d617543c2f45fbc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ba8dc92dc3bc4a01b6a0bb9dcad88909", async() => {
                 BeginContext(1459, 2, true);
                 WriteLiteral("美食");
                 EndContext();
@@ -141,7 +141,7 @@ using SZCMS.Models;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(1488, 30, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c8ca3fdb99144cb2977b925de4a0f265", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "313c897a518946c3928ae2faed47a279", async() => {
                 BeginContext(1507, 2, true);
                 WriteLiteral("新闻");
                 EndContext();
@@ -163,7 +163,7 @@ using SZCMS.Models;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(1536, 30, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6df05f04bf3245e3a2417cc496b9e274", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "40e3e809088e448381e31bb811985ef5", async() => {
                 BeginContext(1555, 2, true);
                 WriteLiteral("八卦");
                 EndContext();
@@ -185,7 +185,7 @@ using SZCMS.Models;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(1584, 30, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30abdaa9bbba47169543cee971c4fbff", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "15714ee527d348529fd16cc296570c4a", async() => {
                 BeginContext(1603, 2, true);
                 WriteLiteral("体育");
                 EndContext();
@@ -207,7 +207,7 @@ using SZCMS.Models;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(1632, 30, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e8f2b71d7e4c456e88f17e7230c3b0bd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3a87cbdec4de4bf59d5eb0d497bbb255", async() => {
                 BeginContext(1651, 2, true);
                 WriteLiteral("音乐");
                 EndContext();

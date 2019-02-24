@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SZCMS", "SZCMS\SZCMS.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SZCMSApi", "SZCMSApi\SZCMSApi.csproj", "{FB41ADDA-1E23-4093-ADC1-9464798B2DF3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SyZero.Infrastructure.Mongo", "SyZero.Infrastructure.Mongo\SyZero.Infrastructure.Mongo.csproj", "{B56EFC27-E5D9-4C72-B72B-9D634BC84502}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{FB41ADDA-1E23-4093-ADC1-9464798B2DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB41ADDA-1E23-4093-ADC1-9464798B2DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB41ADDA-1E23-4093-ADC1-9464798B2DF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B56EFC27-E5D9-4C72-B72B-9D634BC84502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B56EFC27-E5D9-4C72-B72B-9D634BC84502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B56EFC27-E5D9-4C72-B72B-9D634BC84502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B56EFC27-E5D9-4C72-B72B-9D634BC84502}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +91,7 @@ Global
 		{22F8FE52-E2D6-4603-B9B1-E0EFA756BD46} = {681397FB-C9A6-4FCC-ABC7-E99584206316}
 		{0CCC04FE-B188-42E8-8A67-4D0BD6190CBD} = {831B5347-D82B-47AC-B432-3458FA949DAE}
 		{FB41ADDA-1E23-4093-ADC1-9464798B2DF3} = {831B5347-D82B-47AC-B432-3458FA949DAE}
+		{B56EFC27-E5D9-4C72-B72B-9D634BC84502} = {681397FB-C9A6-4FCC-ABC7-E99584206316}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7668E53B-AA87-498A-A3C0-6B7888DDCEFB}

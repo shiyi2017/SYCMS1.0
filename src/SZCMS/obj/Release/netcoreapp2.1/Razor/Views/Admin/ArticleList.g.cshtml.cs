@@ -102,7 +102,7 @@ using SZCMS.Models;
                             ");
             EndContext();
             BeginContext(1583, 31, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9e0a68e833c944cb9e483f6524eff28f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "816c6610ce484cfc95c5d0b61a4f6280", async() => {
                 BeginContext(1600, 5, true);
                 WriteLiteral("请选择标签");
                 EndContext();
@@ -124,7 +124,7 @@ using SZCMS.Models;
             WriteLiteral("\r\n                            ");
             EndContext();
             BeginContext(1644, 29, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b2bda16f143a4ea28af3fa8117c23e99", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "db8534d707e9498bb600f5cb75c51570", async() => {
                 BeginContext(1662, 2, true);
                 WriteLiteral("美食");
                 EndContext();
@@ -146,7 +146,7 @@ using SZCMS.Models;
             WriteLiteral("\r\n                            ");
             EndContext();
             BeginContext(1703, 29, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6395b85267e343b9a76ee54e319de649", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c3b6b94e588f48c4898e542f11f927b8", async() => {
                 BeginContext(1721, 2, true);
                 WriteLiteral("新闻");
                 EndContext();
@@ -168,7 +168,7 @@ using SZCMS.Models;
             WriteLiteral("\r\n                            ");
             EndContext();
             BeginContext(1762, 29, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "52fc8741a9ac4f078b451f676a9d8ac9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e24a710c59974cddb92e08b2b31cdffe", async() => {
                 BeginContext(1780, 2, true);
                 WriteLiteral("八卦");
                 EndContext();
@@ -190,7 +190,7 @@ using SZCMS.Models;
             WriteLiteral("\r\n                            ");
             EndContext();
             BeginContext(1821, 29, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d520c35d0bbb4e5d824f4b59e941c519", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e0bf800b4a94bb2812cb36b1ae0d842", async() => {
                 BeginContext(1839, 2, true);
                 WriteLiteral("体育");
                 EndContext();
@@ -212,7 +212,7 @@ using SZCMS.Models;
             WriteLiteral("\r\n                            ");
             EndContext();
             BeginContext(1880, 29, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f1af98a3c0dc4f0b9426c9ea05d818ab", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "403f6aa6ce1a41a786c66a7d8619bba4", async() => {
                 BeginContext(1898, 2, true);
                 WriteLiteral("音乐");
                 EndContext();

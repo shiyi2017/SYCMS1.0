@@ -72,7 +72,7 @@ using SZCMS.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(183, 1026, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6b1c49bc040448b4b485fd15e4fe513f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fd7a54595bd84a87817e0a4494daf069", async() => {
                 BeginContext(239, 963, true);
                 WriteLiteral(@"
         <div class=""layui-form"" lay-filter=""layuiadmin-form-tags"" id=""layuiadmin-app-form-tags"" style=""padding-top: 30px; text-align: center;"">
